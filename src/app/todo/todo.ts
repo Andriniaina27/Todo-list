@@ -7,7 +7,8 @@ import { CommonModule } from '@angular/common';
   imports: [FormsModule, CommonModule],
   templateUrl: './todo.html',
   styleUrl: './todo.css',
-  standalone: true
+  standalone: true,
+  host: { ngSkipHydration: 'true' }
 })
 export class Todo {
   newTask : string = '';
